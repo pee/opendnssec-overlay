@@ -1,0 +1,21 @@
+--- /var/tmp/portage/net-dns/opendnssec-2.1.1/work/opendnssec-2.1.1/Makefile.am	2017-04-28 11:27:32.000000000 +0000
++++ /tmp/Makefile.am	2017-05-01 16:01:42.579999799 +0000
+@@ -30,12 +30,12 @@
+ 
+ install-data-hook:
+ 	$(INSTALL) -d $(DESTDIR)$(localstatedir)
+-	$(INSTALL) @INSTALLATIONUSERARG@ @INSTALLATIONGROUPARG@ -d $(DESTDIR)$(localstatedir)/opendnssec
+-	$(INSTALL) @INSTALLATIONUSERARG@ @INSTALLATIONGROUPARG@ -d $(DESTDIR)$(localstatedir)/opendnssec/signer
+-	$(INSTALL) @INSTALLATIONUSERARG@ @INSTALLATIONGROUPARG@ -d $(DESTDIR)$(localstatedir)/opendnssec/enforcer
+-	$(INSTALL) @INSTALLATIONUSERARG@ @INSTALLATIONGROUPARG@ -d $(DESTDIR)$(localstatedir)/opendnssec/signconf
+-	$(INSTALL) @INSTALLATIONUSERARG@ @INSTALLATIONGROUPARG@ -d $(DESTDIR)$(localstatedir)/opendnssec/unsigned
+-	$(INSTALL) @INSTALLATIONUSERARG@ @INSTALLATIONGROUPARG@ -d $(DESTDIR)$(localstatedir)/opendnssec/signed
++	$(INSTALL) @INSTALLATIONUSERARG@ @INSTALLATIONGROUPARG@ -d $(DESTDIR)$(localstatedir)/lib/opendnssec
++	$(INSTALL) @INSTALLATIONUSERARG@ @INSTALLATIONGROUPARG@ -d $(DESTDIR)$(localstatedir)/lib/opendnssec/signer
++	$(INSTALL) @INSTALLATIONUSERARG@ @INSTALLATIONGROUPARG@ -d $(DESTDIR)$(localstatedir)/lib/opendnssec/enforcer
++	$(INSTALL) @INSTALLATIONUSERARG@ @INSTALLATIONGROUPARG@ -d $(DESTDIR)$(localstatedir)/lib/opendnssec/signconf
++	$(INSTALL) @INSTALLATIONUSERARG@ @INSTALLATIONGROUPARG@ -d $(DESTDIR)$(localstatedir)/lib/opendnssec/unsigned
++	$(INSTALL) @INSTALLATIONUSERARG@ @INSTALLATIONGROUPARG@ -d $(DESTDIR)$(localstatedir)/lib/opendnssec/signed
+ 	$(INSTALL) -d $(DESTDIR)$(localstatedir)/run
+ 	$(INSTALL) @INSTALLATIONUSERARG@ @INSTALLATIONGROUPARG@ -d $(DESTDIR)$(localstatedir)/run/opendnssec
+ 
